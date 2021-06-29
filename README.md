@@ -1,7 +1,7 @@
 
 # biglasso: Extend Lasso Model Fitting to Big Data in R
 
-[![Build Status](https://travis-ci.org/YaohuiZeng/biglasso.svg?branch=master)](https://travis-ci.org/YaohuiZeng/biglasso)
+[![Build Status](https://www.travis-ci.com/CHY-WANG/biglasso.svg?branch=master)](https://www.travis-ci.com/CHY-WANG/biglasso)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/biglasso)](https://CRAN.R-project.org/package=biglasso)
 [![CRAN RStudio mirror overall downloads](http://cranlogs.r-pkg.org/badges/grand-total/biglasso)](http://www.r-pkg.org/pkg/biglasso)
 ![CRAN Downloads month](http://cranlogs.r-pkg.org/badges/biglasso)

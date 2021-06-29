@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Plot coefficients from a "biglasso" object — plot.biglasso • biglasso</title>
+<title>Plot coefficients from a "mbiglasso" object — plot.mbiglasso • biglasso</title>
 
 
 <!-- jquery -->
@@ -39,9 +39,9 @@
 
 
 
-<meta property="og:title" content="Plot coefficients from a "biglasso" object — plot.biglasso" />
-<meta property="og:description" content="Produce a plot of the coefficient paths for a fitted biglasso
-object." />
+<meta property="og:title" content="Plot coefficients from a "mbiglasso" object — plot.mbiglasso" />
+<meta property="og:description" content="Produce a plot of the coefficient paths for a fitted multiple responses
+mbiglasso object." />
 
 
 
@@ -115,25 +115,25 @@ object." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Plot coefficients from a "biglasso" object</h1>
-    <small class="dont-index">Source: <a href='https://github.com/YaohuiZeng/biglasso/blob/master/R/plot.biglasso.R'><code>R/plot.biglasso.R</code></a></small>
-    <div class="hidden name"><code>plot.biglasso.Rd</code></div>
+    <h1>Plot coefficients from a "mbiglasso" object</h1>
+    <small class="dont-index">Source: <a href='https://github.com/YaohuiZeng/biglasso/blob/master/R/plot.mbiglasso.R'><code>R/plot.mbiglasso.R</code></a></small>
+    <div class="hidden name"><code>plot.mbiglasso.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Produce a plot of the coefficient paths for a fitted <code><a href='biglasso.html'>biglasso</a></code>
-object.</p>
+    <p>Produce a plot of the coefficient paths for a fitted multiple responses
+<code>mbiglasso</code> object.</p>
     </div>
 
-    <pre class="usage"><span class='co'># S3 method for biglasso</span>
-<span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='va'>x</span>, alpha <span class='op'>=</span> <span class='fl'>1</span>, log.l <span class='op'>=</span> <span class='cn'>TRUE</span>, <span class='va'>...</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='co'># S3 method for mbiglasso</span>
+<span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='va'>x</span>, alpha <span class='op'>=</span> <span class='fl'>1</span>, log.l <span class='op'>=</span> <span class='cn'>TRUE</span>, norm.beta <span class='op'>=</span> <span class='cn'>TRUE</span>, <span class='va'>...</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>x</th>
-      <td><p>Fitted <code>"biglasso"</code> model.</p></td>
+      <td><p>Fitted <code>"mbiglasso"</code> model.</p></td>
     </tr>
     <tr>
       <th>alpha</th>
@@ -145,6 +145,11 @@ is large.  Default is alpha=1.</p></td>
       <td><p>Should horizontal axis be on the log scale?  Default is TRUE.</p></td>
     </tr>
     <tr>
+      <th>norm.beta</th>
+      <td><p>Should the vertical axis be the l2 norm of coefficients for each variable?
+Default is TRUE. If False, the vertical axis is the coefficients.</p></td>
+    </tr>
+    <tr>
       <th>...</th>
       <td><p>Other graphical parameters to <code>plot</code></p></td>
     </tr>
@@ -152,11 +157,11 @@ is large.  Default is alpha=1.</p></td>
 
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <div class='dont-index'><p><code><a href='biglasso.html'>biglasso</a></code>, <code><a href='cv.biglasso.html'>cv.biglasso</a></code></p></div>
+    <div class='dont-index'><p><code><a href='biglasso.html'>biglasso</a></code>,</p></div>
     <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
 
-    <p>Yaohui Zeng and Patrick Breheny</p>
-<p>Maintainer: Yaohui Zeng &lt;yaohui.zeng@gmail.com&gt;</p>
+    <p>Chuyi Wang</p>
+<p>Maintainer: Chuyi Wang &lt;wwaa0208@gmail.com&gt;</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>

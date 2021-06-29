@@ -227,7 +227,7 @@ void standardize_and_get_residual(NumericVector &center, NumericVector &scale,
                                   int *p_keep_ptr, vector<int> &col_idx, //columns to keep, removing columns whose scale < 1e-6
                                   vector<double> &z, double *lambda_max_ptr,
                                   int *xmax_ptr, XPtr<BigMatrix> xMat, double *y, 
-                                  int *row_idx, double lambda_min, double alpha, int n, int p) {
+                                  int *row_idx, double alpha, int n, int p) {
   MatrixAccessor<double> xAcc(*xMat);
   double *xCol;
   double sum_xy, sum_y;
@@ -446,7 +446,7 @@ void update_zj(vector<double> &z,
 // Following functions are directly callled inside R
 // -----------------------------------------------------------------------------
 // standardize big matrix, return just 'center' and 'scale'
-// [[Rcpp::export]]
+/*
 RcppExport SEXP standardize_bm(SEXP xP, SEXP row_idx_) {
   BEGIN_RCPP
   SEXP __sexp_result;
@@ -477,6 +477,7 @@ RcppExport SEXP standardize_bm(SEXP xP, SEXP row_idx_) {
   return __sexp_result;
   END_RCPP
 }
+*/
 
 // compute eta = X %*% beta. X: n-by-p; beta: p-by-l. l is length of lambda
 // [[Rcpp::export]]
@@ -517,5 +518,3 @@ RcppExport SEXP get_eta(SEXP xP, SEXP row_idx_, SEXP beta, SEXP idx_p, SEXP idx_
   return __sexp_result;
   END_RCPP
 }
-
-
